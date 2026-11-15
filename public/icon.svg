@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" />
+      <stop offset="50%" stop-color="#047857" />
+      <stop offset="100%" stop-color="#0f766e" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="cubeTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6ee7b7" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+    <linearGradient id="cubeLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <linearGradient id="cubeRight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background with rounded corners for standard view -->
+  <rect width="512" height="512" rx="108" fill="url(#bgGrad)" />
+
+  <!-- Subtle glow aura in center -->
+  <circle cx="256" cy="256" r="160" fill="#10b981" opacity="0.18" filter="url(#glow)" />
+
+  <!-- 3D Isometric Grocery Box floating in cart -->
+  <!-- Isometric Cube Top -->
+  <polygon points="256,120 330,162 256,204 182,162" fill="url(#cubeTop)" />
+  <!-- Isometric Cube Left -->
+  <polygon points="182,162 256,204 256,290 182,248" fill="url(#cubeLeft)" />
+  <!-- Isometric Cube Right -->
+  <polygon points="256,204 330,162 330,248 256,290" fill="url(#cubeRight)" />
+
+  <!-- Cube Tape / Detail -->
+  <line x1="256" y1="120" x2="256" y2="204" stroke="#ffffff" stroke-width="4" stroke-opacity="0.6" />
+  <polyline points="256,204 256,290" stroke="#047857" stroke-width="3" />
+
+  <!-- Supermarket Cart Basket Outline -->
+  <path d="M120 250 L160 250 L200 370 L340 370 L380 270 L170 270" fill="none" stroke="#ffffff" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" />
+  <line x1="210" y1="320" x2="360" y2="320" stroke="#ffffff" stroke-width="12" stroke-linecap="round" opacity="0.85" />
+
+  <!-- Cart Wheels -->
+  <circle cx="215" cy="415" r="22" fill="#34d399" />
+  <circle cx="215" cy="415" r="10" fill="#064e3b" />
+  <circle cx="325" cy="415" r="22" fill="#34d399" />
+  <circle cx="325" cy="415" r="10" fill="#064e3b" />
+
+  <!-- Sparkles / 3D Smart AI Badge -->
+  <path d="M375 130 Q390 145 405 145 Q390 145 375 160 Q360 145 345 145 Q360 145 375 130 Z" fill="#facc15" />
+  <path d="M140 180 Q150 190 160 190 Q150 190 140 200 Q130 190 120 190 Q130 190 140 180 Z" fill="#38bdf8" />
+</svg>

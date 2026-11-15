@@ -1,0 +1,6 @@
+{
+  "name": "ShopVerse 3D",
+  "description": "Next-generation 3D e-commerce platform with interactive 3D product visualization, AI shopping assistant, real-time cart, checkout, seller and admin portals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
